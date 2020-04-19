@@ -6,7 +6,10 @@ import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { SharedModule } from "./shared/shared.module";
-import { HomePageComponent } from './home-page/home-page.component';
+import { HomePageComponent } from "./home-page/home-page.component";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
 @NgModule({
   declarations: [AppComponent, HomePageComponent],
@@ -14,7 +17,9 @@ import { HomePageComponent } from './home-page/home-page.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    AngularFireModule,
+    AngularFirestoreModule,
+    AngularFireAuthModule,
     SharedModule
   ],
   providers: [],
